@@ -1,0 +1,253 @@
+
+/* Anton Regular */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+       url('../fonts/anton-v23-latin-regular.woff') format('woff'),
+       url('../fonts/anton-v23-latin-regular.woff2') format('woff2'); 
+}
+
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-regular.woff') format('woff'),
+       url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'); 
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Anton', monospace;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main{
+  flex-grow: 2;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+section{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button, a{
+  cursor: pointer;
+}
+
+img{
+  display: flex;
+}
+
+
+
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  position: fixed;
+  top: 57px;
+  background-color: transparent;
+  
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.site-nav-bar{
+  width: 100%;
+  max-width: 405px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.site-nav-link, .number{
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+
+.site-nav-link:hover, .number:hover{
+  color: rgba(0, 98, 255, 0.65);
+}
+
+
+
+/* HERO */
+
+.hero{
+  height: 100vh;
+  background-image: url(../pictures/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-info{
+  height: 300px;
+}
+
+.hero-title{
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 10%;
+}
+
+.hero-title-site-name{
+  font-size: 100px;
+  line-height: 150.5px;
+}
+
+.hero-btn{
+  width: 238px;
+  height: 57px;
+  padding: 18px 23px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+}
+
+.hero-btn:hover{
+  background-color: #fff;
+  color: #050505;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+
+/* ABOUT */
+
+.about-event{
+  padding-top: 112px;
+  margin-bottom: 115px;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  gap: 58px;
+}
+
+.about-title{
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-cards{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-card{
+  width: 570px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-card .about-card-title{
+  font-size: 25px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about-card .about-card-text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.about-card .about-card-img-slot{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* FOOTER */
+
+.footer-container{
+  height: 100px;
+}
+
+.footer-text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+}
+
+.footer-text:first-child{
+  margin-right: 55px;
+}
+
